@@ -1,0 +1,5 @@
+exclude:
+  - LinkedIn_Profile_Copy_Paste.md
+  - "*.docx"
+  - "*.pdf"
+  - "refrences cv old"
