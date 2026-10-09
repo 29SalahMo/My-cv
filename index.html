@@ -3,20 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>السيرة الذاتية — صلاح الدين محمد</title>
+<title>السيرة الذاتية — صلاح الدين محمد | IT Support & Support Engineer</title>
+<meta name="description" content="السيرة الذاتية المهنية لصلاح الدين محمد - مهندس دعم فني IT Technical Support Engineer ومهندس علوم حاسب من جامعة غرينتش وجامعة MSA ومطور Full Stack.">
+<meta name="author" content="صلاح الدين محمد">
+
+<!-- Open Graph / Social Media Meta Tags -->
+<meta property="og:title" content="السيرة الذاتية — صلاح الدين محمد | IT Support & Full Stack Engineer">
+<meta property="og:description" content="مهندس دعم فني IT Technical Support Engineer ومهندس علوم حاسب خريج جامعة غرينتش وجامعة MSA ومطور Full Stack & Mobile.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://29salahmo.github.io/My-cv/">
+<link rel="canonical" href="https://29salahmo.github.io/My-cv/">
+
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
 <style>
 @page{size:A4;margin:0}
 *{margin:0;padding:0;box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 :root{--b:#1a5276;--l:#2e86c1;--d:#1c2833;--g:#5d6d7e}
 body{font-family:'Cairo',Tahoma,'Segoe UI',sans-serif;background:#e9edf0;color:var(--d);font-size:9.6px;line-height:1.42}
-.page{width:210mm;height:297mm;margin:0 auto;background:#fff;padding:8mm 11mm;overflow:hidden;box-shadow:0 2px 12px #0002}
+.page{width:210mm;height:297mm;margin:0 auto;background:#fff;padding:8mm 11mm;overflow:hidden;box-shadow:0 2px 12px #0002;position:relative}
 .header{text-align:center;padding-bottom:6px;border-bottom:2.5px solid var(--b);margin-bottom:7px}
 h1{font-size:21px;font-weight:900;color:var(--b);line-height:1.3}
 .titles{font-size:10px;font-weight:600;color:var(--l);margin:1px 0 3px}
 .titles i{color:#aab7b8;font-style:normal;margin:0 5px}
 .contact{display:flex;justify-content:center;flex-wrap:wrap;gap:2px 12px;font-size:9.4px}
 .contact a{color:var(--b);text-decoration:none;font-weight:700}
+.contact a:hover{text-decoration:underline}
 .sec{margin-bottom:7px}
 .st{font-size:10.5px;font-weight:900;color:var(--b);letter-spacing:1px;border-bottom:1.5px solid var(--b);padding-bottom:1px;margin-bottom:4px}
 .sum{color:#34495e;text-align:justify;line-height:1.55}
@@ -36,11 +47,30 @@ li{margin-bottom:0.5px}
 .tc{color:var(--g);font-style:italic;direction:ltr;unicode-bidi:isolate;font-size:8.8px}
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:3px 14px}
 .ft{text-align:center;font-size:8.6px;color:#8a97a0;font-style:italic;border-top:1px solid #dde;padding-top:3px}
-@media print{body{background:#fff}.page{margin:0;box-shadow:none}}
-@media screen and (max-width:800px){.page{width:100%;height:auto;overflow:visible;padding:16px}.sk,.cols{grid-template-columns:1fr}}
+
+/* Web floating actions bar */
+.no-print-bar{position:fixed;top:16px;left:16px;z-index:9999;display:flex;gap:8px}
+.action-btn{background:var(--b);color:#fff;border:none;padding:8px 14px;border-radius:20px;font-family:'Cairo',sans-serif;font-size:12px;font-weight:700;cursor:pointer;box-shadow:0 3px 8px rgba(0,0,0,0.2);display:flex;align-items:center;gap:6px;transition:all 0.2s ease;text-decoration:none}
+.action-btn:hover{background:var(--l);transform:translateY(-1px)}
+
+@media print{
+  .no-print-bar{display:none !important}
+  body{background:#fff}
+  .page{margin:0;box-shadow:none;width:210mm;height:297mm;padding:8mm 11mm}
+}
+@media screen and (max-width:800px){
+  .no-print-bar{position:static;justify-content:center;margin:12px 0 4px}
+  .page{width:100%;height:auto;overflow:visible;padding:16px}
+  .sk,.cols{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
+
+<div class="no-print-bar">
+  <button class="action-btn" onclick="window.print()">🖨️ طباعة / حفظ كـ PDF</button>
+</div>
+
 <div class="page"><div class="in">
 
 <div class="header">
@@ -48,8 +78,8 @@ li{margin-bottom:0.5px}
   <div class="titles">IT Help Desk &amp; Support Engineer<i>|</i>مهندس علوم حاسب<i>|</i>مطور Full Stack<i>|</i>مطور تطبيقات موبايل<i>|</i>ذكاء اصطناعي NLP<i>|</i>أمن سيبراني</div>
   <div class="contact">
     <span>📞 01018394829</span><span>✉ salahmohamed2912004@gmail.com</span><span>📍 الجيزة، 6 أكتوبر، مصر</span>
-    <a href="https://linkedin.com/in/salahaldin291" target="_blank">LinkedIn</a>
-    <a href="https://github.com/29SalahMo" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/salahaldin291" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/29SalahMo" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div>
 
@@ -136,7 +166,7 @@ li{margin-bottom:0.5px}
 
 </div></div>
 <script>
-function fit(){var p=document.querySelector('.page'),i=p.firstElementChild;i.style.zoom=1;var s=getComputedStyle(p),a=p.clientHeight-parseFloat(s.paddingTop)-parseFloat(s.paddingBottom),h=i.scrollHeight;if(innerWidth>800&&h>a)i.style.zoom=(a/h)*0.99}
+function fit(){var p=document.querySelector('.page'),i=p.firstElementChild;if(!i)return;i.style.zoom=1;var s=getComputedStyle(p),a=p.clientHeight-parseFloat(s.paddingTop)-parseFloat(s.paddingBottom),h=i.scrollHeight;if(innerWidth>800&&h>a)i.style.zoom=(a/h)*0.99}
 addEventListener('load',fit);addEventListener('beforeprint',fit);if(document.fonts)document.fonts.ready.then(fit);
 </script>
 </body>
